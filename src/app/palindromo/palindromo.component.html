@@ -1,6 +1,8 @@
-<div>
-  <h1>Verificador de Palíndromo</h1>
-  <input [(ngModel)]="numero" type="number" placeholder="Digite um número">
-  <button (click)="verificar()">Verificar</button>
-  <p *ngIf="resultado !== null">O número {{ numero }} é um palíndromo? {{ resultado }}</p>
+<div class="container bg-dark text-center p-3 position-absolute top-50 start-50 translate-middle">
+  <h1 class="text-light">Verificador de Palíndromo</h1>
+    <div class="row">
+      <input [(ngModel)]="numero" type="number" placeholder="Digite um número">
+      <button type="button" class="btn btn-success" (click)="verificar()">Verificar</button>
+      <p class="text-light" *ngIf="resultado !== null">O número {{ numero }} é um palíndromo? {{ resultado }}</p>
+    </div>
 </div>
